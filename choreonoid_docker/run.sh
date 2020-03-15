@@ -30,7 +30,7 @@ docker rm ${cname}
 
 docker run ${OPT}    \
     --privileged     \
-    --runtime=nvidia \
+    --runtime=nvidia    \
     ${NET_OPT}       \
     --env="DOCKER_ROS_SETUP=/catkin_ws/devel/setup.bash" \
     --env="DISPLAY"  \
